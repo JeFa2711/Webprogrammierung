@@ -53,6 +53,24 @@ nav > ul > li:hover {
   grid-area: right;
 }
 
+#bg{
+  width: 60em;
+  height: 25em;
+}
+
+#fotolinks{
+  width: 200px;
+  height:250px;
+  padding-left: 6em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+#van2{
+  width: 370px;
+  height: 120x;
+  padding: 1.8em;
+}
 table .description{
   background-color: #4caf50;
 

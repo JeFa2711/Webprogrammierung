@@ -1,0 +1,48 @@
+body {
+  background-image: url("file:///C:/Users/jessi/OneDrive/Desktop/HTML/background3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 2.5em;
+  padding: 2.5em;
+}
+h1, h2 {
+  background-color: #fff7;
+}
+
+h1{
+  font-size: 50px;
+  text-align: center;
+}
+
+#kategorie{
+  font-size: 25px;
+  font-style:oblique;
+  background-color: #fff7;
+  text-align: center;
+}
+
+h3 {
+  background-color: red;
+  text-align: center;
+}
+
+footer {
+  background-color: #0007;
+  color:white;
+}
+
+a{
+  color:white;
+}
+
+img {
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px grey;
+}
+#card:hover {
+  font-size: 450%;
+  cursor: pointer;
+  transform: scale(1.03);
+}

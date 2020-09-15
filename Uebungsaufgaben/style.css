@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgb(22, 177, 198);
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(200, 200, 200, 0.75);
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+main {
+    padding: 0.5em;
+}
+
+h2 {
+    color: rgb(17, 96, 107);
+}
+
+.album {
+    border: 1px solid lightgrey;
+    width: 30em;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    color: rgba(25, 25, 25);
+}
+
+.album > .icon {
+    font-size: 330%;
+    display: inline-block;
+}
+
+.album > .description {
+    display: inline-block;
+    margin-left: 0.5em;
+}
+
+.album .title {
+    font-weight: bold;
+}
