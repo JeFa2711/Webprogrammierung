@@ -3,83 +3,81 @@ html {
 }
 
 body {
+  margin: 0px;
+}
+
+.item1 { grid-area: header; background-color: #bb2410; color: white; text-align: center; padding-bottom: 1.5em;}
+.item2 { grid-area: nav; background-color: #333333;}
+.item3 { grid-area: left; background-color: #f1f1f1; padding-left: 1em; padding-right: 1em;}
+.item4 { grid-area: right; padding-left: 1em; padding-right: 1em;}
+.item5 { grid-area: footer; background-color: #e6510f; text-align: center;}
+
+.grid-container {
   display: grid;
   grid-template-areas:
-  'header'
-  'nav'
-  'test'
-  "footer"
-}
-#left-part, #right-part {
-  grid-area: test;
-  display: inline-grid;
-  grid-column: auto, auto;
-}
-
-
-header {
-  grid-area: header;
-  background-color: #bb2410;
-
-  color: white;
-  text-align: center;
-}
-nav {
-  grid-area: nav;
+    'header header header header header header'
+    'nav nav nav nav nav nav'
+    'left left right right right right'
+    'footer footer footer footer footer footer';
 }
 
 nav > ul{
-  background-color: #333333;
-
+  margin: 0px;
+  display: inline-block;
+  padding-left: 0em;
   list-style: none;
   color: white;
 }
 nav > ul > li {
   display: inline-block;
-
-  padding: 0.5em;
+  padding: 0.75em;
 }
 nav > ul > li:hover {
   background-color: #656565;
   cursor: pointer;
 }
 
-#left-part{
-  grid-area: left;
-  background-color: #f1f1f1;
+#nav_left > li:first-child{
+  background-color: #656565;
 }
 
-#right-part{
-  grid-area: right;
+#nav_right {
+  float: right;
 }
 
-#bg{
-  width: 60em;
-  height: 25em;
-}
-
-#fotolinks{
-  width: 200px;
-  height:250px;
-  padding-left: 6em;
-  padding-bottom: 1em;
+table {
   padding-top: 1em;
+  width: 100%;
 }
 
-#van2{
-  width: 370px;
-  height: 120x;
-  padding: 1.8em;
-}
 table .description{
   background-color: #4caf50;
 
   color: white;
 }
 
-footer{
-  grid-area: footer;
-  background-color: #e6510f;
+#van2{
+  width: 100%;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
 
-  text-align: center;
+#fotolinks{
+  width: 56%;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+#fotolinks2{
+  width: 38%;
+  float: right;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+#bg{
+  width: 100%;
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
