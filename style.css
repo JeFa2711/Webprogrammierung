@@ -6,11 +6,11 @@ body {
   margin: 0px;
 }
 
-.item1 { grid-area: header; background-color: #bb2410; color: white; text-align: center; padding-bottom: 1.5em;}
-.item2 { grid-area: nav; background-color: #333333;}
-.item3 { grid-area: left; background-color: #f1f1f1; padding-left: 1em; padding-right: 1em;}
-.item4 { grid-area: right; padding-left: 1em; padding-right: 1em;}
-.item5 { grid-area: footer; background-color: #e6510f; text-align: center;}
+header { grid-area: header; background-color: #bb2410; color: white; text-align: center; padding-bottom: 1.5em;}
+nav { grid-area: nav; background-color: #333333;}
+.left_part { grid-area: left; background-color: #f1f1f1; padding-left: 1em; padding-right: 1em;}
+.right_part { grid-area: right; padding-left: 1em; padding-right: 1em;}
+footer { grid-area: footer; background-color: #e6510f; text-align: center;}
 
 .grid-container {
   display: grid;
@@ -50,7 +50,7 @@ table {
   width: 100%;
 }
 
-table .description{
+.right_part > table tr:first-child{
   background-color: #4caf50;
 
   color: white;
