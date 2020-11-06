@@ -1,0 +1,80 @@
+/*https://github.com/DennisSchulmeister/dhbwka-wwi-webprog-quellcodes/blob/master/1%20HTML%20und%20CSS/Aufgaben/One-Pager/Aufgabe/img/bg1.jpg?raw=true*/
+
+html{
+  font-family: sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+
+}
+header {
+  background-image: url("https://github.com/DennisSchulmeister/dhbwka-wwi-webprog-quellcodes/blob/master/1%20HTML%20und%20CSS/Aufgaben/One-Pager/Aufgabe/img/bg1.jpg?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+h1{
+  color: red;
+  font-size: 40px;
+  padding-bottom: 0.5em;
+
+}
+
+h1, h2 {
+  text-align: center;
+  font-weight: lighter;
+
+}
+#line2{
+  padding-bottom: 1.5em;
+}
+
+h3{
+  color: rgb(211,63,91);
+  font-weight: bold;
+}
+
+.telfax{
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}
+.kanadaflagge{
+  text-align: right;
+}
+
+.kontakt{
+  display: inline-block;
+  padding-right:  10em;
+  padding-left: 10em;
+  text-align: left;
+
+}
+.bilderleiste {
+  text-align: center;
+  padding-top: 5em;
+  padding-bottom: 1em;
+}
+
+.bilderleiste img{
+  border-width: 4px;
+  border-color: white;
+border-style: solid;
+}
+section{
+  background-color: rgb(233, 233, 223);
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.email a{
+  color: rgb(117,182,173);
+
+}
