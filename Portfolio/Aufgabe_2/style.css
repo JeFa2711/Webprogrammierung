@@ -13,40 +13,49 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  height: 22em;
   margin: 0;
   padding: 0;
-
-
 }
 
-h1{
+#line1{
   color: red;
   font-size: 40px;
-  padding-bottom: 0.5em;
+  padding-top: 1em;
+  font-size: 50px;
+  padding-bottom: 1em;
+  text-align: center;
 
 }
-
-h1, h2 {
+#line2, #line3 {
   text-align: center;
   font-weight: lighter;
+  font-size: 24px;
 
 }
-#line2{
-  padding-bottom: 1.5em;
-}
 
-h3{
+
+#line4 {
   color: rgb(211,63,91);
   font-weight: bold;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border: 0;
+  font-size: 22px;
+
 }
+
 
 .telfax{
   padding-top: 1em;
   padding-bottom: 1em;
 
 }
-.kanadaflagge{
-  text-align: right;
+header img{
+  position: absolute;
+  right: 20px;
+  padding-top: 1em;
 }
 
 .kontakt{
@@ -59,7 +68,7 @@ h3{
 .bilderleiste {
   text-align: center;
   padding-top: 5em;
-  padding-bottom: 1em;
+  padding-bottom: 5em;
 }
 
 .bilderleiste img{
@@ -71,8 +80,8 @@ section{
   background-color: rgb(233, 233, 223);
   text-align: center;
   width: 100%;
+  padding: 0em;
   margin: 0;
-  padding: 0;
 }
 .email a{
   color: rgb(117,182,173);
