@@ -20,7 +20,7 @@
                         <div class="tab-indicator"></div>
                     </li>
                     <li class="tab-item" data-tab-content="#tabpage-2">
-                        Vans
+                        Buchungsanfrage
                         <div class="tab-indicator"></div>
                     </li>
 
@@ -32,23 +32,83 @@
                 <div id="tabpage-1" class="tab-page">
                     <h2>Länder</h2>
                     <p>
-                    Inhalt
+                    <ul>
+                      <li>
+                         Italien
+                      </li>
+                      <li>
+                         Spanien
+                      </li>
+                      <li>
+                         Portugal
+                      </li>
+                      <li>
+                         Frankreich
+                      </li>
+                      <li>
+                         Österreich
+                      </li>
+
+
+                    </ul>
                     </p>
-                    <a class="button" href="#">
-                        Campingplatz buchen
-                    </a>
                 </div>
 
                 <div id="tabpage-2" class="tab-page">
-                    <h2>Vans</h2>
+                    <h2>Buchen</h2>
                       <p>
-                      Inhalt
+                      Hast du dir deinen Campingplatz ausgesucht? Dann schick uns jetzt eine Buchungsanfrage.
                       </p>
 
-                      <a class="button" href="#">
-                          Van ausleihen
-                      </a>
-                </div>
+        <form
+            onsubmit = "validateForm(event)"
+            action   = "contact-form.php"
+            method   = "POST"
+        >
+            <!-- Vorname und Nachname -->
+            <label for="firstname">
+                Ihr Name:
+                <span class="required">*</span>
+            </label>
+            <div class="side-by-side">
+                <input name="firstname" type="text" placeholder="Vorname" />
+                <input name="lastname" type="text" placeholder="Nachname" />
+            </div>
+
+            <!-- E-Mailadresse -->
+            <label for="email">
+                E-Mail:
+                <span class="required">*</span>
+            </label>
+            <input name="email" type="email" /></br>
+
+            <!-- Auswahlliste für den Campingplatz-->
+            <label for="subject">
+                Campingplatz:
+            </label>
+            <select name="subject">
+                <option selected="selected">Bitte auswählen</option>
+                <option>Italien</option>
+                <option>Spanien</option>
+                <option>Portugal</option>
+                <option>Frankreich</option>
+                <option>Österreich</option>
+            </select>
+            </br>
+
+            <!-- Die Nachricht -->
+            <label for="message">
+                Ihre Nachricht:
+                <span class="required">*</span>
+            </label>
+            <textarea name="message"></textarea>
+            </br>
+            <!-- Button zum Abschicken des Formulars -->
+            <input type="submit" class="button" value="Jetzt Buchungsanfrage senden!"/>
+        </form>
+
+
+             </div>
 
             </div>
         </main>

@@ -1,37 +1,4 @@
-/**
- * Tabreiter werden wie folgt definiert:
- *
- *     <ul class="tab-items">
- *         <li class="tab-item active">
- *             <a href="#tabpage-1">Titel 1</a>
- *             <div class="tab-indicator"></div>
- *         </li>
- *         <li class="tab-item">
- *             <a href="#tabpage-2">Titel 2</a>
- *             <div class="tab-indicator"></div>
- *         </li>
- *         <li class="tab-item">
- *             <a href="#tabpage-3">Titel 3</a>
- *             <div class="tab-indicator"></div>
- *         </li>
- *     </ul>
- *
- *     <div id="tabpage-1" class="tab-page">
- *         Inhalt für Tabreiter 1
- *     </div>
- *
- *     <div id="tabpage-2" class="tab-page">
- *         Inhalt für Tabreiter 2
- *     </div>
- *
- *     <div id="tabpage-3" class="tab-page">
- *         Inhalt für Tabreiter 3
- *     </div>
- *
- * Hier werden nach dem Laden der Seite alle .tab-items gesucht und mit Event
- * Handlern zum Umschalten der Tabreiter versehen. Außerdem wird der erste
- * aktive Tabreiter (gekennzeichnet durch .active) angezeigt.
- */
+
 window.addEventListener("load", () => {
     // Funktion zum Umschalten der Tabreiter
     let switchTabPage = (clickedTabItem) => {
