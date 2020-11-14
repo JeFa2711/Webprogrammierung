@@ -49,9 +49,18 @@ header h2 {
     text-decoration: none;
     font-weight: bold;
 
-    padding: 0.75em;
+    padding: 1em;
+    margin: 1em;
 }
 
 .button:hover {
   transform: scale(1.03);
+}
+
+
+#kontakt{
+  background-color: rgb(235, 235, 235);
+  padding: 1.5em;
+  border-radius: 0.5em;
+
 }
