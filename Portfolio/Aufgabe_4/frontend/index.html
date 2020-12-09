@@ -1,0 +1,197 @@
+<!-- <%@page contentType="text/html" pageEncoding="UTF-8"%> -->
+<!DOCTYPE html>
+<html lang="de-DE" >
+<head>
+  <meta charset="utf-8">
+  <title>Van-Life</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="tabpages.js"></script>
+</head>
+<body>
+  <div id="app">
+  </div>
+  </div>
+  <script type="module" src="/static/js/index.js"></script>
+  <div class="container">
+    <header>
+      <h1>- Camping Vans -</h1>
+      <h2>Reise um die Welt</h2>
+      <h2>Buche Campingplätze und leihe dir deinen Van!</h2>
+    </header>
+    <!-- Tableiste mit Tabseiten -->
+    <div class="tableiste">
+      <!-- <a href="/campingplatz" data-link> -->
+        <button class="tabbutton" onclick="openTab(event, 'tabpage1')">Campingplätze</button>
+      <!-- </a> -->
+      <!-- <a href="/vans" data-link> -->
+        <button class="tabbutton" onclick="openTab(event, 'tabpage2')">Vans</button>
+      <!-- </a> -->
+      <!-- <a href="/buchungsanfrage" data-link> -->
+        <button class="tabbutton" onclick="openTab(event, 'tabpage3')">Buchungsanfrage</button>
+      <!-- </a> -->
+
+    </div>
+
+    <!-- Tabinhalt -->
+    <div class="tabcontainer">
+      <div class="tabinhalt" id="tabpage1">
+        <h2>Wähle deinen Campingplatz</h2>
+        <h2>Länder</h2>
+        <p>
+          <ul>
+            <li>
+              Italien
+            </li>
+            <li>
+              Spanien
+            </li>
+            <li>
+              Portugal
+            </li>
+            <li>
+              Frankreich
+            </li>
+            <li>
+              Österreich
+            </li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="tabinhalt" id="tabpage2">
+        <h2>Wähle deinen Van aus</h2>
+        <p>
+          TO DO: Vans hinzufügen
+        </p>
+      </div>
+
+      <div class="tabinhalt" id="tabpage3">
+        <h2>Jetzt buchen</h2>
+        <p>
+          Hast du dir deinen Campingplatz ausgesucht? Dann schick uns jetzt eine Buchungsanfrage über das Kontaktformular!
+        </p>
+
+        <div id="kontakt">
+          <h2>Kontakt</h2>
+          <form
+          onsubmit = "validateForm(event2)"
+          action   = "contact.php"
+          method   = "POST"
+          >
+
+          <table>
+
+            <tr>
+              <td>
+                <label for="name">
+                  Dein Name:
+                </label>
+              </td>
+
+              <td>
+                <input name="vorname" type="text" placeholder="Vorname" required/>
+              </td>
+
+              <td>
+                <input name="nachname" type="text" placeholder="Nachname" required/>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="email">
+                  E-Mail:
+                </label>
+              </td>
+
+              <td>
+                <input name="email" type="email" placeholder="Deine E-Mail" required/>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="campingplatz">
+                  Campingplatz:
+                </label>
+              </td>
+
+              <td>
+                <select id="laenderlisteid" name="laender">
+                  <option selected="selected">Bitte auswählen</option>
+                  <option value="italien">Italien</option>
+                  <option value="spanien">Spanien</option>
+                  <option value="portugal">Portugal</option>
+                  <option value="frankreich">Frankreich</option>
+                  <option value="oesterreich">Österreich</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="nachricht">
+                  Ihre Nachricht:
+                </label>
+              </td>
+
+              <td>
+                <textarea id="nachrichtid" name="nachricht" placeholder="Deine Nachricht"></textarea>
+              </td>
+
+            </tr>
+          </table>
+          <!-- Alles zwischen <% und %> ist Javacode -->
+          <!-- <% if (request.getMethod().equals("POST")) { %>
+          <h2>Deine Buchungsanfrage wurde erfolgreich übermittelt. </h2>
+          <b>Name: </b> <%= request.getParameter("vorname") %> <%= request.getParameter("nachname") %>
+          <br/>
+          <b>E-Mail: </b> <%= request.getParameter("email") %>
+          <br/>
+          <b>Angefragter Campingplatz: </b> <%= request.getParameter("laender") %>
+          <b>Deine übermittelte Nachricht: </b><%= request.getParameter("nachricht") %>
+          <% } %> -->
+          <input type="submit" class="button" value="Jetzt Buchungsanfrage senden!"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <ul class="tab-items">
+  <li class="tab-item active" data-tab-content="#tabpage-1">
+  Campingplätze
+  <div class="tab-indicator"></div>
+</li>
+
+<li class="tab-item" data-tab-content="#tabpage-2">
+Vans
+<div class="tab-indicator"></div>
+</li>
+
+<li class="tab-item" data-tab-content="#tabpage-3">
+Buchungsanfrage
+<div class="tab-indicator"></div>
+</li>
+</ul> -->
+
+
+
+
+<!-- <div class="container padding-1">
+<div id="tabpage-1" class="tab-page">
+
+</div>
+
+<div id="tabpage-2" class="tab-page">
+
+</div>
+
+<div id="tabpage-3" class="tab-page">
+
+</div>
+</form>
+</div> -->
+
+
+</body>
+</html>

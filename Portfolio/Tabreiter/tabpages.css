@@ -1,72 +1,107 @@
-/* Container mit den Tablaschen */
-.tab-items {
+/* Container mit den Tablaschen
+.tabelement {
     list-style: none;
     padding: 0;
     margin: 0;
+}*/
+/* Die Tableiste*/
+.container{
+  height: 180px;
+  width: 100%;
 }
 
-/* Eine einzelne Tablasche */
-.tab-item {
+.container h1{
+  padding-top: 30px;
+}
+.tableiste{
+  text-align: center;
+
+}
+/* Ein einzelner TAB */
+.tabbutton {
     display: block;
     margin: 0;
     padding: 0.75em;
     min-width: 10em;
-    background-color: black;
-    border: 0px solid grey;
+    background-color: white;
+    border: 1px solid grey;
     border-bottom-width: 1px;
-    text-transform: uppercase;
     cursor: pointer;
+    float:left;
 }
 
-.tab-item,
-.tab-item a,
-.tab-item a:visited {
-    color: #d0d0d0;
-    text-decoration: none;
+.tabbutton:hover{
+  background-color: black;
+  color: white;
+}
+.tabbutton.active{
+  background-color: black;
+  color: white;
 }
 
-.tab-item:last-child {
-    border-bottom-width: 0;
-    border-right-width: 0;
+.tabinhalt{
+  margin: 5px;
+  padding: 2.5px;
+  animation: fadeEffect 1s;
+}
+#campingplaetze li{
+  list-style: none;
+}
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 @media all and (min-width: 30em) {
-    .tab-items {
+    .tabelement {
         display: flex;
     }
 
-    .tab-item {
+    .tabbutton {
         border-bottom-width: 0;
         border-right-width: 1px;
     }
 }
 
-.tab-item:hover,
+/* .tabelement a,
+.tabelement a:visited {
+    color: #d0d0d0;
+    text-decoration: none;
+} */
+
+/* .tab-item:last-child {
+    border-bottom-width: 0;
+    border-right-width: 0;
+} */
+
+
+
+/* .tab-item:hover,
 .tab-item:hover a,
 .tab-item:hover a:visited {
     color: white;
-}
+} */
 
-.tab-item .tab-indicator {
+/* .tab-item .tab-indicator {
     margin-top: 0.5em;
     width: 3em;
     height: 0.3em;
     background-color: #b0b0b0;
-}
+} */
 
-.tab-item:hover .tab-indicator {
+/* .tab-item:hover .tab-indicator {
     background-color: white;
-}
+} */
 
-/* Aktive Tablasche */
-.tab-item.active {
+/* Aktiver Tab */
+/* .tabelement.active {
     background: white;
     font-weight: bold;
 }
 
-.tab-item.active,
-.tab-item.active a,
-.tab-item.active a:visited {
+.tabelement.active,
+.tabelement.active a,
+.tabelement.active a:visited {
     color: #404040;
 }
 
@@ -82,9 +117,9 @@
 
 .tab-item.active:hover .tab-indicator {
     background-color: #fff;
-}
+} */
 
 /* Klasse zum Ausblenden der unsichtbaren Tabreiter */
-.tab-page {
+/* .tabinhalt {
     display: none;
-}
+} */

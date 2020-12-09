@@ -14,17 +14,24 @@
       <h1>-Camping Vans-</h1>
       <h2>Reise um die Welt</h2>
       <h2>Buche Campingplätze und leihe dir deinen Van!</h2>
-      <ul class="tab-items">
-        <li class="tab-item active" data-tab-content="#tabpage-1">
-          Campingplätze
-          <div class="tab-indicator"></div>
-        </li>
-        <li class="tab-item" data-tab-content="#tabpage-2">
-          Buchungsanfrage
-          <div class="tab-indicator"></div>
-        </li>
+      <!-- Tableiste mit Tabseiten -->
+        <ul class="tab-items">
+          <li class="tab-item active" data-tab-content="#tabpage-1">
+            Campingplätze
+            <div class="tab-indicator"></div>
+          </li>
 
-      </ul>
+          <li class="tab-item" data-tab-content="#tabpage-2">
+            Vans
+            <div class="tab-indicator"></div>
+          </li>
+
+          <li class="tab-item" data-tab-content="#tabpage-3">
+            Buchungsanfrage
+            <div class="tab-indicator"></div>
+          </li>
+        </ul>
+
     </div>
   </header>
   <main>
@@ -53,9 +60,16 @@
       </div>
 
       <div id="tabpage-2" class="tab-page">
+        <h2>Wähle deinen Van aus</h2>
+        <p>
+          test
+        </p>
+      </div>
+
+      <div id="tabpage-3" class="tab-page">
         <h2>Jetzt buchen</h2>
         <p>
-          Hast du dir deinen Campingplatz ausgesucht? Dann schick uns jetzt eine Buchungsanfrage.
+          Hast du dir deinen Campingplatz ausgesucht? Dann schick uns jetzt eine Buchungsanfrage über das Kontaktformular!
         </p>
 
         <div id="kontakt">
@@ -65,54 +79,74 @@
           action   = "contact.php"
           method   = "POST"
           >
-          <div class="row">
-            <!-- Vorname und Nachname -->
-            <label for="name">
-              Dein Name:
-              <!-- <span class="required">*</span> -->
-            </label>
-            <!-- <div class="side-by-side"> -->
-              <input name="vorname" type="text" placeholder="Vorname" />
-              <input name="nachname" type="text" placeholder="Nachname" />
-          </div>
 
-          <div class="row">
-            <!-- E-Mailadresse -->
-            <label for="email">
-              E-Mail:
-              <!-- <span class="required">*</span> -->
-            </label>
-            <input name="email" type="email" placeholder="Deine E-Mail" />
-          </div>
+          <table>
 
-          <div class="row">
-            <!-- Auswahlliste für den Campingplatz-->
-            <label for="campingplatz">
-              Campingplatz:
-            </label>
-            <select id="laenderlisteid" name="laender">
-              <option selected="selected">Bitte auswählen</option>
-              <option value="italien">Italien</option>
-              <option value="spanien">Spanien</option>
-              <option value="portugal">Portugal</option>
-              <option value="frankreich">Frankreich</option>
-              <option value="oesterreich">Österreich</option>
-            </select>
-          </div>
+            <tr>
+              <td>
+                <label for="name">
+                  Dein Name:
+                </label>
+              </td>
 
-          <div class="row">
-            <!-- Die Nachricht -->
-            <label for="nachricht">
-              Ihre Nachricht:
-              <!-- <span class="required">*</span> -->
-            </label>
-            <textarea id="nachrichtid" name="nachricht" placeholder="Deine Nachricht"></textarea>
-          </div>
+              <td>
+                <input name="vorname" type="text" placeholder="Vorname" required/>
+              </td>
 
-          <div class="row">
-            <!-- Button zum Abschicken des Formulars -->
-            <input type="submit" class="button" value="Jetzt Buchungsanfrage senden!"/>
-          </div>
+              <td>
+                <input name="nachname" type="text" placeholder="Nachname" required/>
+              </td>
+            </tr>
+
+
+            <tr>
+              <td>
+                <label for="email">
+                  E-Mail:
+                </label>
+              </td>
+
+              <td>
+                <input name="email" type="email" placeholder="Deine E-Mail" required/>
+              </td>
+            </tr>
+
+
+            <tr>
+              <td>
+                <label for="campingplatz">
+                  Campingplatz:
+                </label>
+              </td>
+
+              <td>
+                <select id="laenderlisteid" name="laender">
+                  <option selected="selected">Bitte auswählen</option>
+                  <option value="italien">Italien</option>
+                  <option value="spanien">Spanien</option>
+                  <option value="portugal">Portugal</option>
+                  <option value="frankreich">Frankreich</option>
+                  <option value="oesterreich">Österreich</option>
+                </select>
+              </td>
+            </tr>
+
+
+            <tr>
+              <td>
+                <label for="nachricht">
+                  Ihre Nachricht:
+                </label>
+              </td>
+
+              <td>
+                <textarea id="nachrichtid" name="nachricht" placeholder="Deine Nachricht"></textarea>
+              </td>
+
+            </tr>
+          </table>
+
+          <input type="submit" class="button" id="" value="Jetzt Buchungsanfrage senden!"/>
 
       </div>
     </form>

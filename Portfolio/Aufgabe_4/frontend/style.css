@@ -1,0 +1,110 @@
+html, body {
+    background-image: url(img/header.jpg);
+    font-family: sans-serif;
+    font-size: 14pt;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+
+}
+
+.button{
+  padding: 1em;
+  margin: 1em;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 1em;
+  cursor: pointer;
+}
+.button:hover{
+  border-width: medium;
+  border-color: black;
+}
+
+.tableiste{
+  padding-top: 2em;
+}
+.container {
+    width: 100%;
+    max-width: 70em;
+    margin: 0 auto;
+}
+
+.container h1{
+  padding-top: 30px;
+}
+
+/* Ein einzelner TAB */
+.tabbutton {
+    display: inline-block;
+    margin: 0em;
+    padding: 1em;
+    min-width: 10em;
+    background-color: white;
+    border: 1px solid grey;
+    border-bottom-width: 1px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px grey;
+    transition: background-color 0.1s;
+}
+
+.tabbutton:hover{
+  background-color: black;
+  color: white;
+}
+.tabbutton.active{
+  background-color: black;
+  color: white;
+}
+
+.tabinhalt{
+  margin-top: 1em;
+  padding: 2.5px;
+  animation: fadeEffect 1s;
+  background-color: rgb(255, 255, 255, 0.6);
+  border-radius: 1em;
+  text-align: center;
+  font-family: sans-serif;
+  display: none;
+}
+#kontakt
+{
+  text-align: left;
+  background-color: rgb(227, 227, 227);
+  padding: 1.5em;
+  margin: 1.5em;
+  border-radius: 1em;
+}
+#tabpage1 li{
+  list-style: none;
+}
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@media all and (min-width: 30em) {
+    .tabelement {
+        display: flex;
+    }
+
+    .tabbutton {
+        border-bottom-width: 0;
+        border-right-width: 1px;
+    }
+}
